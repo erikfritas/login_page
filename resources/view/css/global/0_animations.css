@@ -1,0 +1,57 @@
+@keyframes changeBodyColor{
+    0%, 100%{
+        /* Colors */
+        background-color: var(--bg_color_1_true);
+    }
+    50%{
+        /* Colors */
+        background-color: rgb(25, 23, 65);
+    }
+}
+
+@keyframes login_rotate {
+    0%, 100%{
+        /* Aligns */
+        padding: 0;
+        padding-right: 100px;
+    }
+    25%{
+        /* Aligns */
+        padding: 0;
+        padding-bottom: 100px;
+    }
+    50%{
+        /* Aligns */
+        padding: 0;
+        padding-left: 100px;
+    }
+    75%{
+        /* Aligns */
+        padding: 0;
+        padding-top: 100px;
+    }
+    90%{
+        /* Aligns */
+        padding: 0;
+        padding-right: 100px;
+    }
+}
+
+@keyframes form_rotate {
+    0%, 100%{
+        /* Align */
+        transform: rotateZ(0deg);
+    }
+    25%{
+        /* Aligns */
+        transform: rotateZ(50deg);
+    }
+    50%{
+        /* Aligns */
+        transform: rotateZ(-50deg);
+    }
+    75%{
+        /* Aligns */
+        transform: rotateZ(50deg);
+    }
+}

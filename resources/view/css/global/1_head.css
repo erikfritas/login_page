@@ -1,0 +1,32 @@
+*{
+    /* Aligns */
+    margin: 0;
+    padding: 0;
+
+    /* Sizes */
+    box-sizing: border-box;
+
+    /* Fonts */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html, body {
+    /* Sizes */
+    height: 100%;
+
+    /* Colors */
+    background-image: linear-gradient(to bottom, var(--bg_color_1), var(--bg_color_2));
+    background-attachment: fixed;
+    color: aliceblue;
+
+    /* Animations */
+    animation-name: changeBodyColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+::selection{
+    /* Colors */
+    background-color: rgba(0, 0, 0, 0.207);
+    color: lime;
+}

@@ -1,0 +1,67 @@
+#login{
+    /* Aligns */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow-y: auto;
+
+    /* Sizes */
+    width: 75%;
+    height: 80%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    /* Colors */
+    background-image: linear-gradient(to bottom, var(--bg_color_1_true), var(--bg_color_2));
+
+    /* Times */
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+
+    /* Animations */
+    animation-name: login_rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#login:hover{
+    /* Sizes */
+    height: 100%;
+    border-radius: 0px;
+
+    /* Animations */
+    animation-play-state: paused;
+}
+
+#login:hover form{
+    /* Animations */
+    animation-name: form_rotate;
+    animation-duration: .5s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#login form{
+    /* Colors */
+    background-color: rgba(27, 26, 48, 0.446);
+
+    /* Aligns */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+
+    /* Sizes */
+    padding: 15px 25px;
+    border-radius: 26px;
+}
+
+#login form input:not([type=submit]){
+    /* Sizes */
+    padding: 5px 10px;
+    font-size: 22px;
+
+    /* Colors */
+    color: aliceblue;
+}

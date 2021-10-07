@@ -1,0 +1,71 @@
+input[type="text"]:not(.default),
+input[type="email"]:not(.default),
+input[type="password"]:not(.default),
+input[type="number"]:not(.default){
+    /* Colors */
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 2px solid gray;
+
+    /* Sizes */
+    border-radius: 30px;
+}
+
+input[type="text"]:hover:not(.default),
+input[type="email"]:hover:not(.default),
+input[type="password"]:hover:not(.default),
+input[type="number"]:hover:not(.default){
+    /* Colors */
+    background-color: rgba(54, 54, 77, 0.542);
+}
+
+input[type="text"]:focus:not(.default),
+input[type="email"]:focus:not(.default),
+input[type="password"]:focus:not(.default),
+input[type="number"]:focus:not(.default){
+    /* Colors */
+    outline: none;
+    border-color: limegreen;
+}
+
+input[type="submit"]:not(.default),
+button:not(.default){
+    cursor: pointer;
+
+    /* Colors */
+    background-color: black;
+    border: none;
+    box-shadow: 2.5px 2.5px 0px limegreen, -2.5px -2.5px 0px blue;
+    color: aliceblue;
+
+    /* Sizes */
+    padding: 5px 10px;
+    border-radius: 1px;
+
+    /* Times */
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .8s;
+}
+
+input[type="submit"]:hover:not(.default),
+button:hover:not(.default){
+    /* Sizes */
+    border-radius: 25px;
+}
+
+.input-group{
+    /* Aligns */
+    margin-bottom: 50px;
+}
+
+.input-row{
+    /* Aligns */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-row:not(:first-child){
+    /* Aligns */
+    margin-top: 20px;
+}
